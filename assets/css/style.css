@@ -1,0 +1,85 @@
+body{
+    background-color: #e0ebe8;
+}
+.navbar{
+    padding: 1rem;
+}
+.mountain{
+    width: 30%;
+    height: auto;
+    margin: 15% auto;
+    position: relative;
+}
+.mountain img{
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+.mountain:after{
+    content: "";
+    min-height: 35px;
+    position: absolute;
+    top: 90%;
+    border-radius: 50%;
+    animation: shadowSize 6s ease-in-out infinite;
+}
+
+.hero-text{
+    font-size: 3em;
+    font-weight: 800;
+    color: #414141;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    position:absolute;
+    top: 135px;
+    width: 100%;
+    text-align: center;
+}
+.typejs{
+    color: #cd132f;
+}
+
+
+/*  =========== Keyframe for animation ============*/
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@-webkit-keyframes shadowSize {
+    0%   { width:130px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+    50%  { width:100px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+    100% { width:130px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+}
+
+
+@media (max-width: 1050px){
+    .mountain{
+        width: 40%;
+        margin: 20% auto;
+    }
+}
+@media (max-width: 780px){
+    .mountain{
+        width: 55%;
+        margin: 25% auto;
+    }
+    .hero-text{
+    font-size: 2.5em;
+    }
+}
+@media (max-width: 480px){
+    .mountain{
+        width: 96%;
+        margin: 50% auto;
+    }
+    .hero-text{
+    font-size: 2em;
+    }
+}
