@@ -79,10 +79,14 @@ body{
 }
 @media (max-width: 480px){
     .mountain{
-        width: 96%;
-        margin: 50% auto;
+        width: 70%;
+        margin: 30% auto;
     }
     .hero-text{
-    font-size: 2em;
+        top: 20;
+        font-size: 1.5em;
+    }
+    .mountain:after{
+        height: 45px;
     }
 }
