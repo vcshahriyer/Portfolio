@@ -73,6 +73,9 @@ body{
     .hero-text{
     font-size: 2.5em;
     }
+    .mountain:after{
+        height: 40px;
+    }
 }
 @media (max-width: 480px){
     .mountain{
