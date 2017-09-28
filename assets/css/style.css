@@ -115,6 +115,7 @@ body{
 @media only screen and (max-width: 480px) and (min-width: 320px){
     .mountain{
         width: 80%;
+        top: 62%;
     }
     .shadow{
         left: -1.4rem;
