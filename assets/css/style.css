@@ -83,7 +83,7 @@ body{
         margin: 23% auto;
     }
     .hero-text{
-    font-size: 2.5em;
+    font-size: 2.2em;
     }
     .mountain:after{
         
@@ -95,7 +95,6 @@ body{
         margin: 32% auto;
     }
     .hero-text{
-        top: 20;
         font-size: 1.6em;
     }
     .mountain:after{
@@ -107,3 +106,19 @@ body{
     100% { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
 }
+@media (width: 462px) {
+    .hero-text{
+        top: 120px;
+        font-size: 1.5em;
+    }
+
+    .mountain{
+        margin: 28% auto;
+    }
+
+    @-webkit-keyframes shadowSize {
+    0%   { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+    50%  { width:60px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+    100% { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+    }
+    }
