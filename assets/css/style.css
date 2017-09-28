@@ -2,19 +2,28 @@ body{
     background-color: #e0ebe8;
 }
 .navbar{
-    padding: 1rem;
+    padding: 1rem 0;
+}
+.nav-item a{
+    font-size: 20px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
 }
 .mountain{
-    width: 30%;
-    height: auto;
-    margin: 15% auto;
-    position: relative;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    
 }
 .mountain img{
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
 }
-.mountain:after{
+.shadow{
     content: "";
     height: 35px;
     width: 90px;
@@ -26,7 +35,7 @@ body{
 }
 
 .hero-text{
-    font-size: 3em;
+    font-size: 2.8em;
     font-weight: 800;
     color: #414141;
     font-family: 'Poppins', sans-serif;
@@ -62,63 +71,65 @@ body{
 
 
 @media only screen and (max-width: 1920px) and (min-width: 1501px){
-    .mountain:after{
-        left: 15%;
+    .shadow{
+        left: 20%;
+    }
+    .nav-item{
+        padding-right: 30px;
     }
 }
 
 @media only screen and (max-width: 1050px) and (min-width: 781px){
     .hero-text{
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
     .mountain{
-        width: 40%;
-        margin: 18% auto;
+        width: 53%;
+    }
+    .shadow{
+        left: 2.6rem;
     }
 
 }
 @media only screen and (max-width: 780px) and (min-width: 481px){
     .mountain{
         width: 55%;
-        margin: 23% auto;
+    }
+    .logo img{
+        width: 90px;
+        height: 90px;
     }
     .hero-text{
-    font-size: 2.2em;
+        font-size: 2.2em;
     }
-    .mountain:after{
-        
+    .shadow{
+        left: -2rem;
+    }
+    
+    @-webkit-keyframes shadowSize {
+        0%   { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        50%  { width:60px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+        100% { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
 }
 @media only screen and (max-width: 480px) and (min-width: 320px){
     .mountain{
-        width: 70%;
-        margin: 32% auto;
+        width: 80%;
+    }
+    .shadow{
+        left: -1.4rem;
+    }
+    .logo img{
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
     }
     .hero-text{
         font-size: 1.6em;
     }
-    .mountain:after{
-        left: -10%;
-    }
     @-webkit-keyframes shadowSize {
-    0%   { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-    50%  { width:60px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
-    100% { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        0%   { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        50%  { width:60px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+        100% { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
 }
-@media (width: 462px) {
-    .hero-text{
-        top: 120px;
-        font-size: 1.5em;
-    }
-
-    .mountain{
-        margin: 28% auto;
-    }
-
-    @-webkit-keyframes shadowSize {
-    0%   { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-    50%  { width:60px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
-    100% { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-    }
-    }
