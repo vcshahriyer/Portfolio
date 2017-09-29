@@ -1,5 +1,6 @@
 body{
     background-color: #e0ebe8;
+    overflow-x: hidden
 }
 .navbar{
     padding: 1rem 0;
@@ -47,6 +48,34 @@ body{
 	font-size: .8em;
 }
 
+.up,.up img,.down,.down img{
+    width: 150px;
+}
+.up{
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    transform: rotate(-13deg)
+}
+
+.down{
+    position: absolute;
+    right: -84px;
+    bottom: 180px;
+    transform: rotate(-10deg)
+}
+.front_end{
+    position: absolute;
+    right: -55px;
+    top: 10px;
+    animation: float 6s ease-in-out infinite;
+}
+.back_end{
+    position: absolute;
+    bottom: 200px;
+    right: -150px;
+    animation: float 6s ease-in-out infinite;
+}
 
 /*  =========== Keyframe for animation ============*/
 @keyframes float {
@@ -67,6 +96,7 @@ body{
     100% { width:130px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
 }
 
+/* =============== Media Query =====================*/
 
 @media only screen and (max-width: 1920px) and (min-width: 1051px){
     .nav-item{
@@ -75,6 +105,8 @@ body{
 	.shadow{
 		left: 10%;
 	}
+    .up{right: 15px;}
+    .front_end{right: -60px;}
 }
 
 @media only screen and (max-width: 1050px) and (min-width: 781px){
@@ -87,6 +119,8 @@ body{
 	.shadow{
 		left: 15%;
 	}
+    .up{right: -5px;}
+    .front_end{right: -75px;}
 }
 @media only screen and (max-width: 780px) and (min-width: 481px){
     .mountain{
@@ -99,13 +133,15 @@ body{
     .hero-text{
         font-size: 2.2em;
     }
-    
+    .up{right: -5px;}
+    .front_end{right: -75px;}
     @-webkit-keyframes shadowSize {
         0%   { width:110px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
         50%  { width:80px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
         100% { width:110px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
 }
+
 @media only screen and (max-width: 480px) and (min-width: 320px){
     .mountain{
         width: 80%;
@@ -136,4 +172,26 @@ body{
         transform: translatey(0px);
     	}
 	}
+.up,.up img,.down,.down img{
+    width: 60px;
+}    
+.up{
+    right: 55px;
+    top: 20px;
+    transform: rotate(-13deg)
+}
+
+.down{
+    right: 50px;
+    bottom: 50px;
+}
+.front_end{
+    right: -15px;
+    top: 15px;
+}
+.back_end{
+    bottom: 58px;
+    right: -15px;
+}
+    
 }
