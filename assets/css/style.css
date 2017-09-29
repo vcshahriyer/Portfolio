@@ -33,16 +33,18 @@ body{
 }
 
 .hero-text{
-    font-size: 2.8em;
+    font-size: 2em;
     font-weight: 800;
     color: #414141;
     font-family: 'Poppins', sans-serif;
-    font-style: italic;
     width: 100%;
     text-align: center;
 }
+.tp_color{
+    color: #c90f31;
+}
 .typejs{
-    color: #cd132f;
+	font-size: .8em;
 }
 
 
