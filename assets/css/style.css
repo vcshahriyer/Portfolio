@@ -109,19 +109,31 @@ body{
 @media only screen and (max-width: 480px) and (min-width: 320px){
     .mountain{
         width: 80%;
+		margin-top: 10px;
     }
     .logo img{
         width: 80px;
         height: 80px;
-        margin-left: 10px;
+        margin-left: 25px;
     }
     .hero-text{
-        font-size: 1.6em;
-        top: 115px;
+        font-size: 1.2em;
+        top: 80px;
     }
     @-webkit-keyframes shadowSize {
         0%   { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
         50%  { width:60px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
         100% { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
+	@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    	}
+	}
 }
