@@ -176,22 +176,22 @@ body{
     width: 60px;
 }    
 .up{
-    right: 55px;
-    top: 20px;
+    right: 82px;
+    top: 25px;
     transform: rotate(-13deg)
 }
 
 .down{
-    right: 50px;
+    right: 85px;
     bottom: 50px;
 }
 .front_end{
-    right: -15px;
-    top: 15px;
+    right: 10px;
+    top: 20px;
 }
 .back_end{
     bottom: 58px;
-    right: -15px;
+    right: 15px;
 }
     
 }
