@@ -1,7 +1,7 @@
 body{
-    background-color: #e0ebe8;
     overflow-x: hidden
 }
+header{background-color: #e0ebe8;}
 svg path,svg line,svg polyline {
     stroke: #fffcfd;
     stroke-width: 1px;
@@ -42,8 +42,9 @@ svg path {
     height: 100px;
 }
 .mountain{
-    width: 35%;
+    width: 30%;
     margin: 50px auto;
+    margin-bottom: 0;
     position: relative;
 
 }
@@ -90,7 +91,7 @@ svg path {
 .down{
     position: absolute;
     right: -84px;
-    bottom: 180px;
+    bottom: 140px;
     transform: rotate(-10deg)
 }
 .front_end{
@@ -101,10 +102,24 @@ svg path {
 }
 .back_end{
     position: absolute;
-    bottom: 200px;
+    bottom: 160px;
     right: -150px;
     animation: float 6s ease-in-out infinite;
 }
+/*  ============== About me section =============*/
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #65C6BB;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+
+
 
 /*  =========== Keyframe for animation ============*/
 @keyframes float {
@@ -127,18 +142,15 @@ svg path {
 
 /* =============== Media Query =====================*/
 
-@media only screen and (max-width: 1920px) and (min-width: 1051px){
+@media only screen and (max-width: 1920px) and (min-width: 1024px){
     .nav-item{
         padding-right: 30px;
     }
-    .shadow{
-        left: 10%;
-    }
-    .up{right: 15px;}
-    .front_end{right: -60px;}
+    .up{right: -15px;top: 10px}
+    .front_end{right: -85px;top: 0}
 }
 
-@media only screen and (max-width: 1050px) and (min-width: 781px){
+@media only screen and (max-width: 1024px) and (min-width: 769px){
     .hero-text{
         font-size: 2.3em;
     }
@@ -151,7 +163,7 @@ svg path {
     .up{right: -5px;}
     .front_end{right: -75px;}
 }
-@media only screen and (max-width: 780px) and (min-width: 481px){
+@media only screen and (max-width: 768px) and (min-width: 481px){
     .mountain{
         width: 55%;
     }
@@ -160,7 +172,7 @@ svg path {
         height: 90px;
     }
     .hero-text{
-        font-size: 2.2em;
+        font-size: 2.1em;
     }
     .up{right: -5px;}
     .front_end{right: -75px;}
@@ -171,7 +183,7 @@ svg path {
     }
 }
 
-@media only screen and (max-width: 480px) and (min-width: 320px){
+@media only screen and (max-width: 480px) and (min-width: 321px){
     .mountain{
         width: 80%;
         margin-top: 10px;
@@ -223,4 +235,49 @@ svg path {
         right: 15px;
     }
 
+}
+
+@media only screen and (max-width: 320px) and (min-width: 220px){
+    .logo img{
+        width: 70px;
+        height: 70px;
+        margin-left: 25px;
+    }
+    .hero-text{font-size: 1.2em}
+    .mountain{
+        width: 70%;
+        margin-top: 10px;
+    }
+    .up, .up img, .down, .down img {
+	    width: 50px;
+    }
+    .up {
+        right: 35px;
+        top: 9px;
+    }
+    .front_end {
+        right: -20px;
+        top: 10px;
+        font-size: 12px;
+    }
+    .down {
+        right: 45px;
+        bottom: 20px;
+    }
+    .back_end {
+        position: absolute;
+        bottom: 28px;
+        right: -5px;
+        animation: float 6s ease-in-out infinite;
+        font-size: 12px;
+    }
+    .shadow{
+        left: -90px;
+        top: 85%
+    }
+    @-webkit-keyframes shadowSize {
+        0%   { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        50%  { width:45px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+        100% { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+    }
 }
