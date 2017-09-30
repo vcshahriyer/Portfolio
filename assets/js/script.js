@@ -16,4 +16,8 @@ $(document).ready(function(){
     loop: true
   });
 
+    
+//    ============ About page ===============
+    
+    
 });

@@ -31,9 +31,7 @@ svg path {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.navbar{
-    padding: 1rem 0;
-}
+
 .nav-item a{
     font-size: 20px;
 }
@@ -46,7 +44,6 @@ svg path {
     margin: 50px auto;
     margin-bottom: 0;
     position: relative;
-
 }
 .mountain img{
     transform: translatey(0px);
@@ -117,10 +114,6 @@ svg path {
   background-repeat: no-repeat;
 }
 
-
-
-
-
 /*  =========== Keyframe for animation ============*/
 @keyframes float {
     0% {
@@ -185,7 +178,7 @@ svg path {
 
 @media only screen and (max-width: 480px) and (min-width: 321px){
     .mountain{
-        width: 80%;
+        width: 50%;
         margin-top: 10px;
     }
     .logo img{
@@ -217,23 +210,24 @@ svg path {
         width: 60px;
     }    
     .up{
-        right: 82px;
-        top: 27px;
-        transform: rotate(-13deg)
+        right: 28px;
+        top: 15px;
     }
 
     .down{
-        right: 85px;
+        right: 12px;
         bottom: 50px;
     }
     .front_end{
-        right: 10px;
-        top: 20px;
+        right: -45px;
+        top: 12px;
     }
     .back_end{
-        bottom: 58px;
+        bottom: -55px;
         right: 15px;
     }
+    .shadow{left: -70px}
+    .logo img {padding-top: 12px;}
 
 }
 
