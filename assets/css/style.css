@@ -1,6 +1,7 @@
 body{
     overflow-x: hidden
 }
+h1{font-size: 1.5em}
 header{background-color: #e0ebe8;}
 svg path,svg line,svg polyline {
     stroke: #fffcfd;
@@ -67,6 +68,7 @@ svg path {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     text-align: center;
+    line-height: .25em;
 }
 .tp_color{
     color: #c90f31;
@@ -104,14 +106,73 @@ svg path {
     animation: float 6s ease-in-out infinite;
 }
 /*  ============== About me section =============*/
-#particles-js{
+#particles-js {
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #65C6BB;
-  background-image: url('');
+  background-color: #323840;
+  background-image: url("");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
+}
+.me-dev {
+    width: 290px;
+    margin: 0px auto;
+    padding-bottom: 45px;
+}
+.me-dev2{
+    width: 290px;
+    padding-bottom: 45px;
+}
+.my-description {
+    text-align: center;
+    width: 45%;
+    height: 35%;
+    border-radius: 13px;
+}
+.my-description2 {
+    text-align: center;
+    width: 45%;
+    height: 35%;
+    border-radius: 13px;
+}
+.my-description h2,
+.my-description2 h2,
+{
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: .06em;
+}
+div.callout {
+	background-color: #444;
+	background-image: -moz-linear-gradient(top, #444, #444);
+	position: relative;
+	color: #ccc;
+	padding: 10px;
+	border-radius: 3px;
+	min-height: 50px;
+	border: 1px solid #333;
+	text-shadow: 0 0 1px #000;
+	
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+}
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+.callout.right::before {
+	left: -20px;
+	top: 40%;
+	border-right: 10px solid #444;
+}
+.callout.left::before {
+	right: -20px;
+	top: 40%;
+	border-left: 10px solid #444;
 }
 
 /*  =========== Keyframe for animation ============*/
@@ -156,6 +217,8 @@ svg path {
     .up{right: -5px;}
     .front_end{right: -75px;}
 }
+
+
 @media only screen and (max-width: 768px) and (min-width: 481px){
     .mountain{
         width: 55%;
@@ -174,12 +237,21 @@ svg path {
         50%  { width:80px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
         100% { width:110px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
+    .my-description h2 {font-size: 16px;}
+    .my-description {
+        width: 48%;
+        height: 63%;
+    }
+    .me-dev {width: 225px;}
 }
+
+
+/* ================== Blackberry Passport except stock browser ================*/
 
 @media only screen and (max-width: 480px) and (min-width: 321px){
     .mountain{
         width: 50%;
-        margin-top: 10px;
+        margin-top: 25px;
     }
     .logo img{
         width: 80px;
@@ -190,10 +262,11 @@ svg path {
         font-size: 1.2em;
         top: 80px;
     }
+    h1{font-size: 1.2em}
     @-webkit-keyframes shadowSize {
-        0%   { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-        50%  { width:60px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
-        100% { width:90px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        0%   { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        50%  { width:45px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+        100% { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
     @keyframes float {
         0% {
@@ -223,13 +296,23 @@ svg path {
         top: 12px;
     }
     .back_end{
-        bottom: -55px;
-        right: 15px;
+        bottom: 55px;
+        right: -55px;
     }
-    .shadow{left: -70px}
+    .shadow{left: -70px;top: 85%}
     .logo img {padding-top: 12px;}
-
+    .me-dev{width: 130px}
+    .my-description {
+        width: 63%;
+        height: 88%;
+        top: 60%;
+        left: 34%;
+    }
+    .me-dev {left: 2%}
+    .my-description h2 {font-size: 12px;}
 }
+ 
+/*=================== iphone 5s portait ============*/
 
 @media only screen and (max-width: 320px) and (min-width: 220px){
     .logo img{
