@@ -1,7 +1,8 @@
 body{
-    background-color: #e0ebe8;
     overflow-x: hidden
 }
+header{background-color: #e0ebe8;height: 100vh;}
+
 svg path,svg line,svg polyline {
     stroke: #fffcfd;
     stroke-width: 1px;
@@ -31,9 +32,7 @@ svg path {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.navbar{
-    padding: 1rem 0;
-}
+
 .nav-item a{
     font-size: 20px;
 }
@@ -42,10 +41,10 @@ svg path {
     height: 100px;
 }
 .mountain{
-    width: 35%;
+    width: 30%;
     margin: 50px auto;
+    margin-bottom: 0;
     position: relative;
-
 }
 .mountain img{
     transform: translatey(0px);
@@ -105,6 +104,25 @@ svg path {
     right: -150px;
     animation: float 6s ease-in-out infinite;
 }
+/*     ================ About me section ==============*/
+.about-me{
+    height: 100vh;
+}
+#particles-js {
+/*  position: absolute;*/
+  width: 100%;
+  height: 100%;
+  background-color: #E74C3C;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+
+
+
 
 /*  =========== Keyframe for animation ============*/
 @keyframes float {
@@ -173,7 +191,7 @@ svg path {
 
 @media only screen and (max-width: 480px) and (min-width: 320px){
     .mountain{
-        width: 80%;
+        width: 50%;
         margin-top: 10px;
     }
     .logo img{
@@ -205,22 +223,23 @@ svg path {
         width: 60px;
     }    
     .up{
-        right: 82px;
-        top: 27px;
-        transform: rotate(-13deg)
+        right: 28px;
+        top: 15px;
     }
 
     .down{
-        right: 85px;
+        right: 12px;
         bottom: 50px;
     }
     .front_end{
-        right: 10px;
-        top: 20px;
+        right: -45px;
+        top: 12px;
     }
     .back_end{
-        bottom: 58px;
+        bottom: -55px;
         right: 15px;
     }
+    .shadow{left: -70px}
+    .logo img {padding-top: 12px;}
 
 }

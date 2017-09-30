@@ -16,4 +16,9 @@ $(document).ready(function(){
     loop: true
   });
 
+    
+//    ============ About page ===============
+    $('#fullpage').fullpage();
+    
+    
 });
