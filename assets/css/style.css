@@ -2,9 +2,12 @@ body{
     overflow-x: hidden
 }
 h1{font-size: 1.5em}
-h3 {
-    font-size: 2em;
-    color: #45b29a; 
+h3 {font-size: 2em;color: #0e9577;}
+p{
+    font-size: 1.6em;
+    font-weight: 300;
+    margin: 0 0 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 header{background-color: #e0ebe8;}
 svg path,svg line,svg polyline {
@@ -114,10 +117,14 @@ svg path {
 }
 /*  ============== About me section =============*/
 .aboutme h2 {
-    color: #1e836c;
+    color: #018668;
     text-align: center;
-    font-size: 3.8em;
+    font-size: 3.3em;
     font-weight: 400;
+    padding: 20px 0;
+}
+.aboutme .deets {
+    padding: 0 0 0 2em;
 }
 .aboutme .right {
     right: 0;
@@ -203,6 +210,7 @@ svg path {
     max-width: 180px;
     margin-right: -20px;
 }
+#develop{margin: 4em 0;}
 
 @keyframes bubblinger-vert{
     0% {
@@ -301,6 +309,10 @@ svg path {
     }
     .up{right: -5px;}
     .front_end{right: -75px;}
+    .aboutme #develop {
+    text-align: left;
+    margin: 3em 0;
+}
 }
 
 
