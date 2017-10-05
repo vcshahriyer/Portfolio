@@ -420,13 +420,13 @@ svg path {
     .hero-text{font-size: 1.2em}
     .mountain{
         width: 70%;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .up, .up img, .down, .down img {
         width: 50px;
     }
     .up {
-        right: 35px;
+        right: 30px;
         top: 9px;
     }
     .front_end {
@@ -448,6 +448,17 @@ svg path {
     .shadow{
         left: -90px;
         top: 85%
+    }
+        @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-10px);
+        }
+        100% {
+            transform: translatey(0px);
+            }
     }
     @-webkit-keyframes shadowSize {
         0%   { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
