@@ -6,12 +6,12 @@
 	.st2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width: .25px;
         -webkit-animation: pulse 1s linear;
         -webkit-animation-iteration-count: 1;
-        -webkit-animation-delay: 4.5s;
+        -webkit-animation-delay: 3s;
     }
 	.st3{stroke:#000;stroke-miterlimit:10;
         -webkit-animation: pulse 1s linear;
         -webkit-animation-iteration-count: 1;
-        -webkit-animation-delay: 4.5s;
+        -webkit-animation-delay: 3s;
     }
     
     @-webkit-keyframes pulse {

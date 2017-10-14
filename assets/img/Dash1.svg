@@ -8,14 +8,14 @@
         stroke-miterlimit:10;stroke:1px;
         -webkit-animation: pulse 1s linear;
         -webkit-animation-iteration-count: 1;
-        -webkit-animation-delay: 4.5s;
+        -webkit-animation-delay: 3s;
     }
 	.st1{
         stroke:#000;
         stroke-miterlimit:10;
         -webkit-animation: pulse 1s linear;
         -webkit-animation-iteration-count: 1;
-        -webkit-animation-delay: 4.5s;
+        -webkit-animation-delay: 3s;
     }
 @-webkit-keyframes pulse {
   0% {
