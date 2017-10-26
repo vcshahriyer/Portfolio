@@ -9,7 +9,12 @@ p{
     margin: 0 0 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
-header{background-color: #e0ebe8;}
+header{
+    height: 100vh;
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to left, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to left, #CFDEF3, #E0EAFC);
+}
 svg path,svg line,svg polyline {
     stroke: #fffcfd;
     stroke-width: 1px;
@@ -36,17 +41,40 @@ svg path,svg line,svg polyline {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
-.nav-item a{
-    font-size: 20px;
+/*===============NAV BAR===============*/
+.navbar{margin-bottom: 0}
+.navbar-default{
+    background-color: transparent;
+    border: none;
 }
 .navbar-brand{
-    height: auto !important;
+    height: 120px;
 }
-.logo img{
-    width: 100px;
-    height: 100px;
+.navbar-nav>li{
+    padding-top: 40px;
+    padding-right: 30px;
 }
+.navbar-nav>li>a{font-size: 1.5em;font-weight: 200}
+.navbar-nav>li:last-child{margin-right:150px}
+.navbar-brand img{
+    height: 100%;
+}
+.navbar-toggle{
+    margin-top: 40px;
+}
+
+.navbar-shadow {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #5d5858;
+    font-family: monospace;
+}
+
+/*===================== NAV END =============*/
+
 .mountain{
     width: 30%;
     margin: 50px auto;
@@ -216,27 +244,27 @@ svg path,svg line,svg polyline {
     0% {
         background-position: 0 0;
     }
-   
+
     5% {
         background-position: 0 -77px;
     }
-   
+
     35% {
         background-position: 0 -77px;
     }
-   
+
     40% {
         background-position: 0 -154px;
     }
-   
+
     68% {
         background-position: 0 -154px;
     }
-   
+
     73% {
         background-position: 0 -231px;
     }
-   
+
     100% {
         background-position: 0 -231px;
     }
@@ -244,26 +272,26 @@ svg path,svg line,svg polyline {
 
 @keyframes bubblinger-vert-down{
     0% {
-    background-position: 0 0;
-}
-5% {
-    background-position: 0 77px;
-}
-35% {
-    background-position: 0 77px;
-}
-40% {
-    background-position: 0 154px;
-}
-68% {
-    background-position: 0 154px;
-}
-73% {
-    background-position: 0 231px;
-}
-100% {
-    background-position: 0 231px;
-}
+        background-position: 0 0;
+    }
+    5% {
+        background-position: 0 77px;
+    }
+    35% {
+        background-position: 0 77px;
+    }
+    40% {
+        background-position: 0 154px;
+    }
+    68% {
+        background-position: 0 154px;
+    }
+    73% {
+        background-position: 0 231px;
+    }
+    100% {
+        background-position: 0 231px;
+    }
 }
 
 
@@ -295,6 +323,7 @@ svg path,svg line,svg polyline {
     }
     .up{right: -9px;top: 12px}
     .front_end{right: -75px;top: 5px}
+    .navbar-brand{margin-left: 230px}
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px){
@@ -310,8 +339,8 @@ svg path,svg line,svg polyline {
     .up{right: -5px;}
     .front_end{right: -75px;}
     .aboutme #develop {
-    text-align: left;
-    margin: 3em 0;
+        text-align: left;
+        margin: 3em 0;
     }
 }
 
@@ -450,7 +479,7 @@ svg path,svg line,svg polyline {
         left: -90px;
         top: 85%
     }
-        @keyframes float {
+    @keyframes float {
         0% {
             transform: translatey(0px);
         }
@@ -459,7 +488,7 @@ svg path,svg line,svg polyline {
         }
         100% {
             transform: translatey(0px);
-            }
+        }
     }
     @-webkit-keyframes shadowSize {
         0%   { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
