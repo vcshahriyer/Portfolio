@@ -10,7 +10,6 @@ p{
     font-family: 'Josefin Sans', sans-serif;
 }
 header{
-    height: 100vh;
     background: #E0EAFC;
     background: -webkit-linear-gradient(to left, #CFDEF3, #E0EAFC);
     background: linear-gradient(to left, #CFDEF3, #E0EAFC);
