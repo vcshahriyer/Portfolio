@@ -22,8 +22,8 @@ svg path,svg line,svg polyline {
 .preloader{
     width: 100%;
     height: 100vh;
-    background: #E44D26;  
-    background: -webkit-linear-gradient(to right, #F16529, #E44D26); 
+    background: #E44D26;
+    background: -webkit-linear-gradient(to right, #F16529, #E44D26);
     background: linear-gradient(to right, #F16529, #E44D26);
     z-index: 9999;
     position: fixed;
@@ -118,7 +118,7 @@ svg path,svg line,svg polyline {
     position: absolute;
     right: 16px;
     top: 20px;
-    transform: rotate(-13deg);
+    transform: rotate(-16deg);
 }
 
 .down{
@@ -316,13 +316,15 @@ svg path,svg line,svg polyline {
 
 /* =============== Media Query =====================*/
 
-@media only screen and (max-width: 1920px) and (min-width: 1024px){
-    .nav-item{
-        padding-right: 30px;
-    }
-    .up{right: -9px;top: 12px}
-    .front_end{right: -75px;top: 5px}
+@media only screen and (max-width: 1440px) and (min-width: 1025px){
+    .nav-item{padding-right: 30px;}
+    .up{right: -9px;top: 30px;}
+    .down {bottom: 38%;}
+    .front_end{right: -75px;top: 22px}
+    .back_end {bottom: 44%;}
     .navbar-brand{margin-left: 230px}
+    .shadow {left: -12%;top: 88%;}
+
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px){
@@ -335,8 +337,10 @@ svg path,svg line,svg polyline {
     .shadow{
         left: 15%;
     }
-    .up{right: -5px;}
-    .front_end{right: -75px;}
+    .up{right: 6%;top: 9%;}
+    .down{right: -12%;bottom: 37%;}
+    .front_end{right: -38px;top: 7%;}
+    .back_end {bottom: 41.5%;right: -130px;}
     .aboutme #develop {
         text-align: left;
         margin: 3em 0;
@@ -373,7 +377,7 @@ svg path,svg line,svg polyline {
 
 /* ================== Blackberry Passport except stock browser ================*/
 
-@media only screen and (max-width: 480px) and (min-width: 321px){
+@media only screen and (max-width: 480px) and (min-width: 376px){
     .mountain{
         width: 50%;
         margin-top: 25px;
@@ -407,7 +411,7 @@ svg path,svg line,svg polyline {
     }
     .up,.up img,.down,.down img{
         width: 60px;
-    }    
+    }
     .up{
         right: 28px;
         top: 15px;
@@ -425,7 +429,7 @@ svg path,svg line,svg polyline {
         bottom: 55px;
         right: -55px;
     }
-    .shadow{left: -70px;top: 85%}
+    .shadow{left: -70px;top: 84%}
     .logo img {padding-top: 12px;}
     .me-dev{width: 130px}
     .my-description {
@@ -440,7 +444,7 @@ svg path,svg line,svg polyline {
 
 /*=================== iphone 5s portait ============*/
 
-@media only screen and (max-width: 320px) and (min-width: 220px){
+@media only screen and (max-width: 375px) and (min-width: 220px){
     .logo img{
         width: 70px;
         height: 70px;
@@ -455,8 +459,8 @@ svg path,svg line,svg polyline {
         width: 50px;
     }
     .up {
-        right: 30px;
-        top: 9px;
+        right: 35px;
+        top: 14px;
     }
     .front_end {
         right: -20px;
@@ -469,14 +473,13 @@ svg path,svg line,svg polyline {
     }
     .back_end {
         position: absolute;
-        bottom: 28px;
+        bottom: 26px;
         right: -5px;
-        animation: float 6s ease-in-out infinite;
         font-size: 12px;
     }
     .shadow{
         left: -90px;
-        top: 85%
+        top: 83%;
     }
     @keyframes float {
         0% {

@@ -7,17 +7,17 @@ $(document).ready(function(){
     }).draw();
     $('.svg-img').fadeIn(100);
     $('.preloader').delay(2000).fadeOut(400);
-    
+
  var typed3 = new Typed('.typejs', {
-    strings: [' <span class="tp_color">A Designer</span>^2000', '<span class="tp_color">A Developer</span>^2000', '<span class="tp_color">A Debugger</span>^2000'],
+    strings: [' <span class="tp_color">A Designer</span>^2000', '<span class="tp_color">Developer</span>^2000', '<span class="tp_color">Debugger</span>^2000'],
     typeSpeed: 40,
     backSpeed: 0,
     smartBackspace: false, // this is a default
     loop: true
   });
 
-    
+
 //    ============ About page ===============
-    
-    
+
+
 });
