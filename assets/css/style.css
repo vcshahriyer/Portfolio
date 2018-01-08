@@ -21,7 +21,7 @@ svg path,svg line,svg polyline {
 
 .preloader{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #E44D26;
     background: -webkit-linear-gradient(to right, #F16529, #E44D26);
     background: linear-gradient(to right, #F16529, #E44D26);
@@ -372,6 +372,34 @@ svg path,svg line,svg polyline {
         height: 63%;
     }
     .me-dev {width: 225px;}
+
+}
+/* ================== Blackberry Passport stock browser and other big screen================*/
+
+@media only screen and (max-width: 700px) and (min-width: 481px){
+      .up, .up img, .down, .down img {
+          width: 118px;
+      }
+      .down {
+          position: absolute;
+          right: -5.5%;
+          bottom: 22%;
+      }
+      .back_end {
+          position: absolute;
+          bottom: 28%;
+          right: -80px;
+      }
+      .shadow {
+          left: -67px;
+          top: 85%;
+      }
+      @-webkit-keyframes shadowSize {
+          0%   { width:105px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+          50%  { width:80px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+          100% { width:110px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+      }
+
 }
 
 
