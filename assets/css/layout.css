@@ -395,19 +395,15 @@ header .menu-btn span:after {
 	overflow: hidden;
 	position: relative;
 	box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.2);
-	border-radius: 170px;
-	-moz-border-radius: 170px;
-	-webkit-border-radius: 170px;
-	-khtml-border-radius: 170px;
+	border-radius: 0 50% 50% 50%;
+	-moz-border-radius: 0 50% 50% 50%;
+	-webkit-border-radius: 0 50% 50% 50%;
+	-khtml-border-radius: 0 50% 50% 50%;
 }
 
 .st-box .st-image img {
 	width: 100%;
 	height: 100%;
-	border-radius: 100%;
-	-moz-border-radius: 100%;
-	-webkit-border-radius: 100%;
-	-khtml-border-radius: 100%;
 }
 
 .st-box .st-title {
