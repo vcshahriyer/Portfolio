@@ -251,6 +251,17 @@ svg path,svg line,svg polyline {
 }
 #develop{margin: 4em 0;}
 
+.footer{
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+.footer p{
+  font-size: 16px;
+}
+
+
+
+
 @-webkit-keyframes bubblinger-vert{
     0% {
         background-position: 0 0;
@@ -414,6 +425,7 @@ svg path,svg line,svg polyline {
     .hero-text{
         font-size: 2.3em;
     }
+    .navbar-brand img {margin-left: 50px;}
     .mountain{
         width: 53%;
     }
@@ -427,6 +439,10 @@ svg path,svg line,svg polyline {
     .aboutme #develop {
         text-align: left;
         margin: 3em 0;
+    }
+    .row {
+        margin-right: unset;
+        margin-left: unset;
     }
 }
 
