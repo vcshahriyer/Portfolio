@@ -11,7 +11,7 @@ p{
 }
 header{
     background: #E0EAFC;
-    background: -webkit-linear-gradient(to left, #CFDEF3, #E0EAFC);
+    background: -webkit-gradient(linear, right top, left top, from(#CFDEF3), to(#E0EAFC));
     background: linear-gradient(to left, #CFDEF3, #E0EAFC);
 }
 svg path,svg line,svg polyline {
@@ -23,7 +23,7 @@ svg path,svg line,svg polyline {
     width: 100%;
     height: 100%;
     background: #E44D26;
-    background: -webkit-linear-gradient(to right, #F16529, #E44D26);
+    background: -webkit-gradient(linear, left top, right top, from(#F16529), to(#E44D26));
     background: linear-gradient(to right, #F16529, #E44D26);
     z-index: 9999;
     position: fixed;
@@ -38,7 +38,8 @@ svg path,svg line,svg polyline {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 /*===============NAV BAR===============*/
 .navbar{margin-bottom: 0}
@@ -64,12 +65,19 @@ svg path,svg line,svg polyline {
 
 .navbar-shadow {
     -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
 }
 .navbar-default .navbar-nav>li>a {
     color: #5d5858;
     font-family: monospace;
+}
+.navbar-collapse {
+    border: none;
+    box-shadow: none;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+    border-color: transparent;
 }
 
 /*===================== NAV END =============*/
@@ -77,12 +85,14 @@ svg path,svg line,svg polyline {
 .mountain{
     width: 30%;
     margin: 50px auto;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     position: relative;
 }
 .mountain img{
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
 }
 .shadow{
     content: "";
@@ -92,7 +102,8 @@ svg path,svg line,svg polyline {
     left: 0;
     top: 90%;
     border-radius: 50%;
-    animation: shadowSize 6s ease-in-out infinite;
+    -webkit-animation: shadowSize 6s ease-in-out infinite;
+            animation: shadowSize 6s ease-in-out infinite;
 }
 
 .hero-text{
@@ -118,29 +129,34 @@ svg path,svg line,svg polyline {
     position: absolute;
     right: 16px;
     top: 20px;
-    transform: rotate(-16deg);
+    -webkit-transform: rotate(-16deg);
+            transform: rotate(-16deg);
 }
 
 .down{
     position: absolute;
     right: -84px;
     bottom: 140px;
-    transform: rotate(-10deg)
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg)
 }
 .front_end{
     position: absolute;
     right: -55px;
     top: 10px;
-    animation: float 6s ease-in-out infinite;
+    -webkit-animation: float 6s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
 }
 .back_end{
     position: absolute;
     bottom: 160px;
     right: -150px;
-    animation: float 6s ease-in-out infinite;
+    -webkit-animation: float 6s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
 }
 /*  ============== About me section =============*/
 .container{
+    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 .aboutme h2 {
@@ -163,8 +179,6 @@ svg path,svg line,svg polyline {
     background: #F3F2F1;
     width: 77px;
     height: 77px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
     border-radius: 60px;
     position: absolute;
     overflow: hidden;
@@ -172,7 +186,6 @@ svg path,svg line,svg polyline {
 }
 .aboutme .bubble .bubbling-design-icons-vert {
     -webkit-animation-name: bubblinger-vert-down;
-    -moz-animation-name: bubblinger-vert-down;
     animation-name: bubblinger-vert-down;
     border-radius: 60px;
     -webkit-border-radius: 60px;
@@ -192,7 +205,6 @@ svg path,svg line,svg polyline {
 }
 .aboutme .bubble .bubbling-dev-icons-vert {
     -webkit-animation-name: bubblinger-vert;
-    -moz-animation-name: bubblinger-vert;
     animation-name: bubblinger-vert;
     border-radius: 60px;
     -webkit-border-radius: 60px;
@@ -239,6 +251,36 @@ svg path,svg line,svg polyline {
 }
 #develop{margin: 4em 0;}
 
+@-webkit-keyframes bubblinger-vert{
+    0% {
+        background-position: 0 0;
+    }
+
+    5% {
+        background-position: 0 -77px;
+    }
+
+    35% {
+        background-position: 0 -77px;
+    }
+
+    40% {
+        background-position: 0 -154px;
+    }
+
+    68% {
+        background-position: 0 -154px;
+    }
+
+    73% {
+        background-position: 0 -231px;
+    }
+
+    100% {
+        background-position: 0 -231px;
+    }
+}
+
 @keyframes bubblinger-vert{
     0% {
         background-position: 0 0;
@@ -269,6 +311,30 @@ svg path,svg line,svg polyline {
     }
 }
 
+@-webkit-keyframes bubblinger-vert-down{
+    0% {
+        background-position: 0 0;
+    }
+    5% {
+        background-position: 0 77px;
+    }
+    35% {
+        background-position: 0 77px;
+    }
+    40% {
+        background-position: 0 154px;
+    }
+    68% {
+        background-position: 0 154px;
+    }
+    73% {
+        background-position: 0 231px;
+    }
+    100% {
+        background-position: 0 231px;
+    }
+}
+
 @keyframes bubblinger-vert-down{
     0% {
         background-position: 0 0;
@@ -296,22 +362,39 @@ svg path,svg line,svg polyline {
 
 
 /*  =========== Keyframe for animation ============*/
-@keyframes float {
+@-webkit-keyframes float {
     0% {
-        transform: translatey(0px);
+        -webkit-transform: translatey(0px);
+                transform: translatey(0px);
     }
     50% {
-        transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+                transform: translatey(-20px);
     }
     100% {
-        transform: translatey(0px);
+        -webkit-transform: translatey(0px);
+                transform: translatey(0px);
+    }
+}
+@keyframes float {
+    0% {
+        -webkit-transform: translatey(0px);
+                transform: translatey(0px);
+    }
+    50% {
+        -webkit-transform: translatey(-20px);
+                transform: translatey(-20px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+                transform: translatey(0px);
     }
 }
 
 @-webkit-keyframes shadowSize {
-    0%   { width:130px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-    50%  { width:100px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
-    100% { width:130px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+    0%   { width:130px; opacity:.5;   -webkit-box-shadow:200px 0 10px rgba(0,0,0,0.4);   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+    50%  { width:100px; opacity:0.3; -webkit-box-shadow:200px 0 30px rgba(0,0,0,0.3); box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+    100% { width:130px; opacity:.5;   -webkit-box-shadow:200px 0 10px rgba(0,0,0,0.4);   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
 }
 
 /* =============== Media Query =====================*/
@@ -362,9 +445,9 @@ svg path,svg line,svg polyline {
     .up{right: -5px;}
     .front_end{right: -75px;}
     @-webkit-keyframes shadowSize {
-        0%   { width:110px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-        50%  { width:80px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
-        100% { width:110px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        0%   { width:110px; opacity:.5;   -webkit-box-shadow:200px 0 10px rgba(0,0,0,0.4);   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        50%  { width:80px; opacity:0.3; -webkit-box-shadow:200px 0 30px rgba(0,0,0,0.3); box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+        100% { width:110px; opacity:.5;   -webkit-box-shadow:200px 0 10px rgba(0,0,0,0.4);   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
     .my-description h2 {font-size: 16px;}
     .my-description {
@@ -372,6 +455,10 @@ svg path,svg line,svg polyline {
         height: 63%;
     }
     .me-dev {width: 225px;}
+    .row {
+        margin-right: unset;
+        margin-left: unset;
+    }
 
 }
 /* ================== Blackberry Passport stock browser and other big screen================*/
@@ -394,10 +481,14 @@ svg path,svg line,svg polyline {
           left: -67px;
           top: 85%;
       }
+      .row {
+          margin-right: unset;
+          margin-left: unset;
+      }
       @-webkit-keyframes shadowSize {
-          0%   { width:105px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-          50%  { width:80px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
-          100% { width:110px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+          0%   { width:100px; opacity:.5;   -webkit-box-shadow:180px 0 10px rgba(0,0,0,0.4);   box-shadow:180px 0 10px rgba(0,0,0,0.4);}
+          50%  { width:80px; opacity:0.3; -webkit-box-shadow:180px 0 30px rgba(0,0,0,0.3); box-shadow:180px 0 30px rgba(0,0,0,0.3);}
+          100% { width:100px; opacity:.5;   -webkit-box-shadow:180px 0 10px rgba(0,0,0,0.4);   box-shadow:180px 0 10px rgba(0,0,0,0.4);}
       }
 
 }
@@ -407,7 +498,7 @@ svg path,svg line,svg polyline {
 
 @media only screen and (max-width: 480px) and (min-width: 376px){
     .mountain{
-        width: 50%;
+        width: 55%;
         margin-top: 25px;
     }
     .logo img{
@@ -419,34 +510,55 @@ svg path,svg line,svg polyline {
         font-size: 1.2em;
         top: 80px;
     }
+    .row {
+        margin-right: unset;
+        margin-left: unset;
+    }
     .aboutme .deets {text-align: center;}
     h1{font-size: 1.2em}
     @-webkit-keyframes shadowSize {
-        0%   { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-        50%  { width:45px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
-        100% { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        0%   { width:65px; opacity:.5;   -webkit-box-shadow:200px 0 10px rgba(0,0,0,0.4);   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        50%  { width:45px; opacity:0.3; -webkit-box-shadow:200px 0 30px rgba(0,0,0,0.3); box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+        100% { width:65px; opacity:.5;   -webkit-box-shadow:200px 0 10px rgba(0,0,0,0.4);   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+    }
+    @-webkit-keyframes float {
+        0% {
+            -webkit-transform: translatey(0px);
+                    transform: translatey(0px);
+        }
+        50% {
+            -webkit-transform: translatey(-10px);
+                    transform: translatey(-10px);
+        }
+        100% {
+            -webkit-transform: translatey(0px);
+                    transform: translatey(0px);
+        }
     }
     @keyframes float {
         0% {
-            transform: translatey(0px);
+            -webkit-transform: translatey(0px);
+                    transform: translatey(0px);
         }
         50% {
-            transform: translatey(-10px);
+            -webkit-transform: translatey(-10px);
+                    transform: translatey(-10px);
         }
         100% {
-            transform: translatey(0px);
+            -webkit-transform: translatey(0px);
+                    transform: translatey(0px);
         }
     }
     .up,.up img,.down,.down img{
         width: 60px;
     }
     .up{
-        right: 28px;
-        top: 15px;
+        right: 18px;
+        top: 16px;
     }
 
     .down{
-        right: 12px;
+        right: 4px;
         bottom: 50px;
     }
     .front_end{
@@ -479,6 +591,12 @@ svg path,svg line,svg polyline {
         margin-left: 25px;
     }
     .hero-text{font-size: 1.2em}
+    .aboutme {text-align: center;}
+    .aboutme h2 {font-size: 2.3em;}
+    .aboutme h3 {font-size: 1.8em;}
+    .aboutme .deets {padding: 0;}
+    .aboutme .col-md-12{padding-left: 0;padding-right: 4px}
+    .aboutme .container {padding-right: 8px;padding-left: 0px;}
     .mountain{
         width: 70%;
         margin-top: 20px;
@@ -488,7 +606,7 @@ svg path,svg line,svg polyline {
     }
     .up {
         right: 35px;
-        top: 14px;
+        top: 10px;
     }
     .front_end {
         right: -20px;
@@ -509,20 +627,41 @@ svg path,svg line,svg polyline {
         left: -90px;
         top: 83%;
     }
-    @keyframes float {
+    .row {
+        margin-right: unset;
+        margin-left: unset;
+    }
+    @-webkit-keyframes float {
         0% {
-            transform: translatey(0px);
+            -webkit-transform: translatey(0px);
+                    transform: translatey(0px);
         }
         50% {
-            transform: translatey(-10px);
+            -webkit-transform: translatey(-10px);
+                    transform: translatey(-10px);
         }
         100% {
-            transform: translatey(0px);
+            -webkit-transform: translatey(0px);
+                    transform: translatey(0px);
+        }
+    }
+    @keyframes float {
+        0% {
+            -webkit-transform: translatey(0px);
+                    transform: translatey(0px);
+        }
+        50% {
+            -webkit-transform: translatey(-10px);
+                    transform: translatey(-10px);
+        }
+        100% {
+            -webkit-transform: translatey(0px);
+                    transform: translatey(0px);
         }
     }
     @-webkit-keyframes shadowSize {
-        0%   { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
-        50%  { width:45px; opacity:0.3; box-shadow:200px 0 30px rgba(0,0,0,0.3);}
-        100% { width:65px; opacity:.5;   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        0%   { width:65px; opacity:.5;   -webkit-box-shadow:200px 0 10px rgba(0,0,0,0.4);   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
+        50%  { width:45px; opacity:0.3; -webkit-box-shadow:200px 0 30px rgba(0,0,0,0.3); box-shadow:200px 0 30px rgba(0,0,0,0.3);}
+        100% { width:65px; opacity:.5;   -webkit-box-shadow:200px 0 10px rgba(0,0,0,0.4);   box-shadow:200px 0 10px rgba(0,0,0,0.4);}
     }
 }
