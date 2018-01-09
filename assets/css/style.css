@@ -1,5 +1,6 @@
 body{
-    overflow-x: hidden
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
 }
 h1{font-size: 1.5em}
 h3 {font-size: 2em;color: #0e9577;}
@@ -73,7 +74,8 @@ svg path,svg line,svg polyline {
 }
 .navbar-collapse {
     border: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .navbar-default .navbar-toggle:hover {
     background-color: transparent;

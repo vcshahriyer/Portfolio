@@ -17,6 +17,7 @@
 */
 
 /* 1. Background Image */
+body{text-rendering: optimizeLegibility;}
 .started-bg {
 	position: fixed;
 	top: 0;
