@@ -11,9 +11,13 @@ p{
     font-family: 'Josefin Sans', sans-serif;
 }
 header{
-    background: #E0EAFC;
+    /* background: #E0EAFC;
     background: -webkit-gradient(linear, right top, left top, from(#CFDEF3), to(#E0EAFC));
-    background: linear-gradient(to left, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to left, #CFDEF3, #E0EAFC); */
+    background-image: url(../img/background-ai.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 svg path,svg line,svg polyline {
     stroke: #fffcfd;
