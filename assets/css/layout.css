@@ -394,7 +394,8 @@ header .menu-btn span:after {
 	height: 183px;
 	overflow: hidden;
 	position: relative;
-	box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.2);
+	        box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 0 50% 50% 50%;
 	-moz-border-radius: 0 50% 50% 50%;
 	-webkit-border-radius: 0 50% 50% 50%;
@@ -1449,15 +1450,6 @@ header .menu-btn span:after {
 .text-box .blog-content {
 	margin-bottom: 60px;
 }
-/*
-.text-box blockquote {
-	font-size: 14px;
-	line-height: 24px;
-	color: #000;
-	border-left: 4px solid #000;
-	padding-left: 20px;
-	margin: 40px 0;
-} */
 
 
 blockquote {
@@ -1465,7 +1457,7 @@ blockquote {
   border-width: 2px 0;
   border-style: solid;
   border-color: #eee;
-  padding: 1.5em 0 0.5em;
+  padding: 1.8em 0 0.5em;
   margin: 1.5em 0;
   position: relative;
 	text-align: center;
@@ -1478,7 +1470,8 @@ blockquote:before {
   position: absolute;
   top: 0em;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: #fff;
   width: 3rem;
   height: 2rem;
