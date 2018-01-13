@@ -5,10 +5,10 @@
 
 $(function () {
 	'use strict';
-	
+
 	var width = $(window).width();
 	var height = $(window).height();
-	
+
 	/* Preloader */
 	$(window).on('load', function() {
 		$(".preloader .spinner").fadeOut(function(){
@@ -46,16 +46,16 @@ $(function () {
 		$('.top-menu ul li a').on('click', function(){
 			var id = $(this).attr('href');
 			var h = parseFloat($(id).offset().top);
-			
+
 			$('body,html').animate({
 				scrollTop: h
 			}, 800);
-			
+
 			return false;
 		});
 		$('.section').on('click', '.contact-btn', function(){
 			$('.top-menu li a[href="#contact-section"]').click();
-			
+
 			return false;
 		});
 	}
@@ -75,7 +75,7 @@ $(function () {
 	$(window).on('scroll', function(){
 		if ($(this).scrollTop() > 100) {
 			$('.top-menu').addClass('fixed');
-		} 
+		}
 		else {
 			$('.top-menu').removeClass('fixed');
 		}
@@ -115,7 +115,7 @@ $(function () {
 			left: x + 'px'
 		}).addClass("animate");
 	});
-	
+
 	/* Validate contact form */
 	$("#cform").validate({
 		rules: {
@@ -141,10 +141,10 @@ $(function () {
 				dataType: 'json',
 				data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&subject='+ $("#cform").find('input[name="subject"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
 				beforeSend: function() {
-				
+
 				},
 				complete: function() {
-				
+
 				},
 				success: function(data) {
 					$('#cform').fadeOut();
@@ -174,10 +174,10 @@ $(function () {
 			$('.alert-success').delay(1000).fadeIn();
 		}
 	});
-	
+
 	/* Initialize masonry items */
 	var $container = $('.box-items');
-	
+
 	$container.imagesLoaded(function(){
 		$container.multipleFilterMasonry({
 			itemSelector: '.box-item',
@@ -186,7 +186,7 @@ $(function () {
 			gutter: 0
 		});
 	});
-	
+
 	/* 12. Initialize masonry filter */
 	$('.filters label').on('change', 'input[type="radio"]', function() {
 		if ($(this).is(':checked')) {
@@ -201,7 +201,7 @@ $(function () {
 			mainClass: 'mfp-fade'
 		});
 	});
-	
+
 	/* Portfolio magnific popup */
 	$('.has-popup').magnificPopup({
 		type: 'inline',
@@ -209,7 +209,7 @@ $(function () {
 		closeBtnInside: true,
 		mainClass: 'mfp-fade'
 	});
-	
+
 	/* gallery */
 	$('.post-lightbox').magnificPopup({
 		delegate: 'a',
@@ -302,7 +302,7 @@ function initMap() {
 		scrollwheel: false,
 		styles: styles
 	}
-	
+
 	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 	var marker = new google.maps.Marker({
 		position: myLatlng,
