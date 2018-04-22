@@ -950,7 +950,12 @@ header .menu-btn span:after {
 .section.works .row .col {
 	padding: 0 12px;
 }
-
+a#showmore {
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0 22px;
+}
+.floatright{float: right !important;}
 @media (max-width: 720px) {
 	.section.works .row .col {
 		padding: 10px;

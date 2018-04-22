@@ -75,6 +75,7 @@ $(function () {
 		}
 	});
 
+
 	/* Clients carousel */
 	$(".reviews-carousel .owl-carousel").owlCarousel({
 		items: 1,
@@ -176,7 +177,7 @@ $(function () {
 		$container.multipleFilterMasonry({
 			itemSelector: '.box-item',
 			filtersGroupSelector: '.filters',
-			percentPosition: true,
+			percentPosition: false,
 			gutter: 0
 		});
 	});
