@@ -38,6 +38,7 @@
       $(items).each(function(){
         $($container).append($(this));
       });
+      $container.masonry( 'destroy' );
       $container.masonry('reloadItems');
       $container.masonry();
     };

@@ -1,4 +1,17 @@
 $(window).ready(function ($) {
+    // Container of masonary filter.
+    var $boxitems = $('.box-items');
+
+    // Hide show more button in all tabs except ALL button.
+    $('.btn-group input:radio[name=fl_radio]').click(function (event) {
+        var $btn = $(event.target).val();
+        if($btn != 'box-item'){
+            $('#showmore').css('display','none');
+        }else {
+            $('#showmore').css('display','inline-block');
+        }
+    });
+
     var fragmentNumber=1;
     /* Masonary show more button */
     $('#showmore').on('click', function (e) {
@@ -20,12 +33,16 @@ $(window).ready(function ($) {
                 $('#showmore').html('No More');
             }
         });
-        //$('.box-items').append(response);
-        var $boxitems = $('.box-items');
         $boxitems.append( $response ).masonry( 'appended', $response );
         $boxitems
-            .masonry('reloadItems')
-            .masonry({ itemSelector: '.box-item' });
+            .multipleFilterMasonry({
+            itemSelector: '.box-item',
+            filtersGroupSelector: '.filters',
+            percentPosition: false,
+            gutter: 0
+            })
+            .masonry( 'reloadItems' );
+
     });
 
 });
