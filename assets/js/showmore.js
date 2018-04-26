@@ -2,7 +2,7 @@ $(window).ready(function ($) {
     // Container of masonary filter.
     var $boxitems = $('.box-items');
     var $showmore = $('#showmore');
-    var loadUrl = window.location.href.repeat('#works-section','');;
+    var loadUrl = window.location.href.replace('#works-section','');
     var customurl = loadUrl+"#works-section";
     // Hide show more button in all tabs except ALL button.
     $('.btn-group input:radio[name=fl_radio]').click(function (event) {
