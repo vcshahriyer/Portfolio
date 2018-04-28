@@ -2,7 +2,7 @@ body{overflow-x:hidden;text-rendering:optimizeLegibility;}
 h1{font-size:1.5em}
 h3{font-size:2em;color:#0e9577;}
 p{font-size:1.6em;font-weight:300;margin:0 0 10px;font-family:'Josefin Sans', sans-serif;}
-header{background-image:url(../img/background-ai.gif);background-repeat:no-repeat;background-size:cover;background-position:center bottom;}
+header{background-image:url(../img/background-ai.png);background-repeat:no-repeat;background-size:cover;background-position:center bottom;}
 svg path,svg line,svg polyline{stroke:#fffcfd;stroke-width:1px;}
 .preloader{width:100%;height:100%;background:#E44D26;background:-webkit-gradient(linear, left top, right top, from(#F16529), to(#E44D26));background:linear-gradient(to right, #F16529, #E44D26);z-index:9999;position:fixed;}
 .preloader svg{width:100%;height:100%;}
