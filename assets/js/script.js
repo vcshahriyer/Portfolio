@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.preloader').delay(2000).fadeOut(400);
 
  var typed3 = new Typed('.typejs', {
-    strings: [' <span class="tp_color">A Designer</span>^2000', '<span class="tp_color">Developer</span>^2000', '<span class="tp_color">Debugger</span>^2000'],
+        strings: [' <span class="tp_color">A DESIGNER</span>^2000', '<span class="tp_color">DEVELOPER</span>^2000', '<span class="tp_color">DEBUGGER</span>^2000'],
     typeSpeed: 40,
     backSpeed: 0,
     smartBackspace: false, // this is a default
