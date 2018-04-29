@@ -22,8 +22,8 @@ svg path,svg line,svg polyline{stroke:#fffcfd;stroke-width:1px;}
 .mountain{width:30%;margin:50px auto;margin-bottom:10px;position:relative;}
 .mountain img{-webkit-transform:translatey(0px);transform:translatey(0px);-webkit-animation:float 6s ease-in-out infinite;animation:float 6s ease-in-out infinite;}
 .shadow{content:"";height:35px;width:90px;position:absolute;left:0;top:90%;border-radius:50%;-webkit-animation:shadowSize 6s ease-in-out infinite;animation:shadowSize 6s ease-in-out infinite;}
-.hero-text{font-size:2em;font-weight:800;color:#414141;font-family:'Poppins', sans-serif;width:100%;text-align:center;line-height:.25em;}
-.tp_color{color:#c90f31;}
+.hero-text{font-size:2em;font-weight:800;color:#9299a5;font-family:'Poppins', sans-serif;width:100%;text-align:center;line-height:.25em;}
+.tp_color{color:#969696;}
 .typejs{font-size:.8em;}
 .up,.up img,.down,.down img{width:150px;}
 .up{position:absolute;right:16px;top:20px;-webkit-transform:rotate(-16deg);transform:rotate(-16deg);}
