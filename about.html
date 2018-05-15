@@ -38,18 +38,6 @@
 	<!-- Page -->
 	<div class="page" id="home-section">
 
-		<!-- Preloader -->
-		<div class="preloader">
-			<div class="centrize full-width">
-				<div class="vertical-center">
-					<div class="spinner">
-						<div class="double-bounce1"></div>
-						<div class="double-bounce2"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<!-- Started Background -->
 		<div class="started-bg">
 			<div id="particles-bg" class="slide" style="background-image: url(assets/images/particles-bg.jpg);"></div>
@@ -134,7 +122,7 @@
 									</p>
 									<p>
 										  <blockquote cite="raghibshahriyer">Life is really simple, but we insist on making it complicated.</blockquote>
-									</p>
+                                    </p>
 								</div>
 								<div class="bts">
 									<a href="assets/cv/CV.docx" class="btn btn_animated"><span class="circle">Download CV</span></a>
@@ -748,13 +736,17 @@
 										<div class="group-val ct-gr">
 											<textarea name="message" placeholder="Message"></textarea>
 										</div>
-										<a href="#" class="btn btn_animated" onclick="$('#cform').submit(); return false;"><span class="circle">Send Message</span></a>
+										<button id="submit" name="contactSubmit" type="submit" value="Submit" class="btn btn_animated"><span class="circle">Send Message</span></button>
 									</form>
 									<div class="alert-success">
 										<p>Thanks, your message is sent successfully. We will contact you shortly!</p>
 									</div>
 								</div>
 							</div>
+                            <!--FORM LOADER-->
+                            <div id="form-loader" class="progress is-hidden">
+                                <div class="indeterminate"></div>
+                            </div>
 						</div>
 					</div>
 				</div>
